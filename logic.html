@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logic</title>
+    <link rel="stylesheet" href="logic css.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <div class="logo">Ed Hub</div>
+            <ul class="nav-links">
+                <li><a href="file:///F:/Edu%20Hub/education%20website%20home.html">Home</a>
+                  
+                </li>
+                <li><a href="#">Combined Maths</a><!-- Additional elements inside "Home" -->
+                  <ul class="sub-menu">
+                      <li><a href="#">Combined Maths</a></li>
+                      <li><a href="#">Chemistry</a></li>
+                      <li><a href="#">Physics</a></li>
+                      <li><a href="#">ICT</a></li>
+                  </ul></li>
+                <li><a href="#">Biology</a><ul class="sub-menu">
+                  <li><a href="#">Biology</a></li>
+                  <li><a href="#">Chemistry</a></li>
+                  <li><a href="#">Physics</a></li>
+                  <li><a href="#">Agriculture</a></li>
+              </ul></li>
+                <li><a href="#">Commerce</a><ul class="sub-menu">
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Business Studies</a></li>
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">ICT</a></li>
+                    <li><a href="#">Business Statistics</a></li>
+                  </ul></li>
+                <li><a href="#">Art</a><ul class="sub-menu">
+                    <li><a href="#">Sinhala</a></li>
+                    <li><a href="#">Logic</a></li>
+                    <li><a href="#">Political Science</a></li>
+                    <li><a href="#">Geography</a></li>
+                    <li><a href="#">Buddhist Civilization</a></li>
+                    <li><a href="#">English Literature</a></li>
+                    <li><a href="#">Japanese</a></li>
+                    <li><a href="#">History and Drama</a></li>
+              </ul></li>
+                <li><a href="#">Technology</a><ul class="sub-menu">
+                    <li><a href="#">Engineering Tech</a></li>
+                    <li><a href="#">Bio Systems Tech</a></li>
+                    <li><a href="#">Science for Tech</a></li>
+                    <li><a href="#"> Agriculture</a></li>
+                    <li><a href="#"> ICT</a></li>
+              </ul></li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="subject">
+    Logic
+   </div>
+    
+   
+
+    <div class="part">
+        <button id="downloadButton1">Download 2010 Part 1</button>
+    <button id="downloadButton2">Download 2010 Part 2</button>
+    <!-- Add more buttons as needed -->
+
+        </div>
+   
+        <div class="part">
+            <button id="downloadButton3">Download 2011 Part 1</button>
+        <button id="downloadButton4">Download 2011 Part 2</button>
+        <!-- Add more buttons as needed -->
+    
+            </div>
+
+            <div class="part">
+                <button id="downloadButton5">Download 2012 Part 1</button>
+            <button id="downloadButton6">Download 2012 Part 2</button>
+            <!-- Add more buttons as needed -->
+        
+                </div>
+
+                <div class="part">
+                    <button id="downloadButton7">Download 2013 Part 1</button>
+                <button id="downloadButton8">Download 2013 Part 2</button>
+                <!-- Add more buttons as needed -->
+            
+                    </div>
+
+                    <div class="part">
+                        <button id="downloadButton9">Download 2014 Part 1</button>
+                    <button id="downloadButton10">Download 2014 Part 2</button>
+                    <!-- Add more buttons as needed -->
+                
+                        </div>
+
+                        <div class="part">
+                            <button id="downloadButton11">Download 2015 Part 1</button>
+                        <button id="downloadButton12">Download 2015 Part 2</button>
+                        <!-- Add more buttons as needed -->
+                    
+                            </div>
+
+                            <div class="part">
+                                <button id="downloadButton13">Download 2016 Part 1</button>
+                            <button id="downloadButton14">Download 2016 Part 2</button>
+                            <!-- Add more buttons as needed -->
+                        
+                                </div>
+
+                                <div class="part">
+                                    <button id="downloadButton15">Download 2017 Part 1</button>
+                                <button id="downloadButton16">Download 2017 Part 2</button>
+                                <!-- Add more buttons as needed -->
+                            
+                                    </div>
+
+                                    <div class="part">
+                                        <button id="downloadButton17">Download 2018 Part 1</button>
+                                    <button id="downloadButton18">Download 2018 Part 2</button>
+                                    <!-- Add more buttons as needed -->
+                                
+                                        </div>
+
+                                        <div class="part">
+                                            <button id="downloadButton19">Download 2019 Part 1</button>
+                                        <button id="downloadButton20">Download 2019 Part 2</button>
+                                        <!-- Add more buttons as needed -->
+                                    
+                                            </div>
+
+                                            <div class="part">
+                                                <button id="downloadButton21">Download 2020 Part 1</button>
+                                            <button id="downloadButton22">Download 2020 Part 2</button>
+                                            <!-- Add more buttons as needed -->
+                                        
+                                                </div>
+
+                                                <div class="part">
+                                                    <button id="downloadButton23">Download 2021 Part 1</button>
+                                                <button id="downloadButton24">Download 2021 Part 2</button>
+                                                <!-- Add more buttons as needed -->
+                                            
+                                                    </div>
+
+                                                    <div class="part">
+                                                        <button id="downloadButton25">Download 2022 Part 1</button>
+                                                    <button id="downloadButton26">Download 2022 Part 2</button>
+                                                    <!-- Add more buttons as needed -->
+                                                
+                                                        </div>
+
+                                                        
+
+
+
+
+
+
+   <script>
+    function createDownloadButtonHandler(pdfPath) {
+        return function() {
+            // Create a link element and set its attributes
+            const link = document.createElement('a');
+            link.href = pdfPath;
+            link.target = '_blank';
+            link.download = pdfPath.substring(pdfPath.lastIndexOf('/') + 1); // Extract the file name from the path
+
+            // Append the link to the document and trigger the download
+            document.body.appendChild(link);
+            link.click();
+
+            // Remove the link from the document after the download is triggered
+            document.body.removeChild(link);
+        };
+    }
+
+    const downloadButton1 = document.getElementById('downloadButton1');
+    const downloadButton2 = document.getElementById('downloadButton2');
+    const downloadButton3 = document.getElementById('downloadButton3');
+    const downloadButton4 = document.getElementById('downloadButton4');
+    const downloadButton5 = document.getElementById('downloadButton5');
+    const downloadButton6 = document.getElementById('downloadButton6');
+    const downloadButton7 = document.getElementById('downloadButton7');
+    const downloadButton8 = document.getElementById('downloadButton8');
+    const downloadButton9 = document.getElementById('downloadButton9');
+    const downloadButton10 = document.getElementById('downloadButton10');
+    const downloadButton11 = document.getElementById('downloadButton11');
+    const downloadButton12 = document.getElementById('downloadButton12');
+    const downloadButton33 = document.getElementById('downloadButton13');
+    const downloadButton14 = document.getElementById('downloadButton14');
+    const downloadButton15 = document.getElementById('downloadButton15');
+    const downloadButton16 = document.getElementById('downloadButton16');
+    const downloadButton17 = document.getElementById('downloadButton17');
+    const downloadButton18 = document.getElementById('downloadButton18');
+    const downloadButton19 = document.getElementById('downloadButton19');
+    const downloadButton20 = document.getElementById('downloadButton20');
+    const downloadButton21 = document.getElementById('downloadButton21');
+    const downloadButton22 = document.getElementById('downloadButton22');
+    const downloadButton23 = document.getElementById('downloadButton23');
+    const downloadButton24 = document.getElementById('downloadButton24');
+    const downloadButton25 = document.getElementById('downloadButton25');
+    const downloadButton26 = document.getElementById('downloadButton26');
+    // Add more button variables as needed
+
+    // Attach event listeners to each button
+    downloadButton1.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton2.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton3.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton4.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton5.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton6.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton7.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton8.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton9.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton10.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton11.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton12.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton13.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton14.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton15.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton16.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton17.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton18.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton19.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton20.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton21.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton22.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton23.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton24.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton25.addEventListener('click', createDownloadButtonHandler('#'));
+    downloadButton26.addEventListener('click', createDownloadButtonHandler('#'));
+    // Add more event listeners as needed
+</script>
+</body>
+</html>
